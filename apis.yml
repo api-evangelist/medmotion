@@ -1,7 +1,28 @@
 aid: medmotion
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/medmotion.png
 name: medmotion
-description: medmotion is a company surfaced as a portfolio company of qiming and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  MedMotion (复动肌骨 / 复动医疗, Shanghai Fudong Medical Management Co.) is a China-based
+  musculoskeletal medical company founded in 2018 in Shanghai, building an integrated
+  orthopedic, rehabilitation, orthotics, and physical-conditioning care model for
+  conservative treatment and pre-/post-surgical recovery of sports and skeletal injuries.
+  It operates three product lines: offline musculoskeletal rehabilitation medical centers,
+  the PhysioCloud cloud service platform, and the NMPA-approved TELEREHAB (悦行) musculoskeletal
+  digital-therapeutics device. It is backed by Qiming Venture Partners (Pre-A lead), TF Capital,
+  and SunMed Capital. As of this enrichment pass MedMotion publishes a patient/clinic-facing
+  marketing site and app backend but no public developer API, OpenAPI specification, SDKs, or
+  developer portal, so no API artifacts were harvested.
 url: https://raw.githubusercontent.com/api-evangelist/medmotion/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,15 +32,29 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Healthcare
+- Medical
+- Rehabilitation
+- Orthopedics
+- Digital Therapeutics
+- Sports Medicine
+- China
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
 common:
+- type: DomainSecurity
+  url: security/medmotion-domain-security.yml
 - type: Website
   url: https://medmotion.cn
